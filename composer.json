@@ -1,0 +1,17 @@
+{
+    "name": "assetplan/imgproxy",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Assetplan\\Imgproxy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cristian Fuentes",
+            "email": "cristian.fuentes@assetplan.cl"
+        }
+    ],
+    "require": {}
+}

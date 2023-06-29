@@ -114,6 +114,7 @@ class UrlBuilder
 
     protected function buildPathOptions(): string
     {
+        $path = '';
         if ($this->resize) {
             $path = '/rs:' . $this->resizingType->value . ':' . $this->width . ':' . $this->height;
         }

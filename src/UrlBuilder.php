@@ -131,6 +131,11 @@ class UrlBuilder
         $info = pathinfo($this->originalUrl);
 
         $extension = $info['extension'];
+
+        if ($extension === 'jfif') {
+            $extension = 'jpg';
+        }
+
         $encodedUrl = rtrim(strtr(base64_encode($this->originalUrl), '+/', '-_'), '=');
 
         return $encodedUrl . '.' . $extension;
